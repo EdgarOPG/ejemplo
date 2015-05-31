@@ -28,9 +28,14 @@ $(document).ready(function()
 
     	$('#networks').click(function()
     	{
-    		$( "#wrapper" ).load( "networks.html" );	
+    		$.ajax(
+    		{
+        		url: "http://edgaropg.github.io/ejemplo/networks.html",
+        		success: function(datos)
+        		{
+       				$("#wrapper").html(data);
+      			}
+			});
     	});
 
 });
-
-

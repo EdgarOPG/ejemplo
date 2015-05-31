@@ -30,11 +30,10 @@ $(document).ready(function()
     	{
     		$.ajax(
     		{
-        		type: "POST",
         		url: "http://edgaropg.github.io/ejemplo/networks.html",
         		success: function(datos)
         		{
-       				alert( "Se guardaron los datos: " + datos);
+       				$("#wrapper").html(data);
       			}
 			});
     	});

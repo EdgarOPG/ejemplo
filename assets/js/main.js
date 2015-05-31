@@ -33,7 +33,7 @@ $(document).ready(function()
         		url: "http://edgaropg.github.io/ejemplo/networks.html",
         		success: function(datos)
         		{
-       				$("#wrapper").html(data);
+       				$("#wrapper").html(datos);
       			}
 			});
     	});
